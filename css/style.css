@@ -15,11 +15,13 @@ article, aside, details, fig caption, figure, footer, header, group, nav, sectio
 body { color: #333; 
        background-color: #FFF; 
        font-family: 'ratio-n4', 'ratio', 'Helvetica Neue', Arial, sans-serif;
-       font-size: 16px; 
+       font-size: 14px; 
        line-height: 26px;}
 h1,h2,h3,h4,h5,h6 { font-family: SpiegelCdOTBold; font-weight: normal; color: #000; }
+h3 { font-size: 19px; }
+h4 { font-size: 16px; }
 
-p, ul, dl, ol { font-size: 16px; margin-bottom: 26px; }
+p, ul, dl, ol { margin-bottom: 26px; }
 li { list-style-type: none; }
 
 a { color: #16a5d9; text-decoration: none; -webkit-transition: all 0.25s linear; -moz-transition: all 0.25s linear; -o-transition: all 0.25s linear; transition: all 0.25s linear; }
@@ -124,7 +126,7 @@ hgroup { padding-top: 34px; }
 .work { font-size: 13px; }
 .work a { color: #666;  }
 
-#tinkerpop .intro { padding: 0 10px; }
+#tinkerpop .intro { font-size: 16px; padding: 0 10px; }
 #tinkerpop h3 { margin-bottom: 11px; }
 #tinkerpop .icon { float: left; width: 108px; }
 #tinkerpop .description { float: left; width: 199px;}
@@ -132,6 +134,16 @@ hgroup { padding-top: 34px; }
 #tinkerpop .toolkit img { padding-bottom: 40px; padding-right: 10px; }
 #tinkerpop > div > div {border: 1px solid #FFF; padding: 10px; }
 #tinkerpop > div > div:hover { border: 1px solid #e3e5e4; background: #f9fafa; }
+
+#book p, ul, dl, ol { margin-bottom: 1em; }
+#book ol { padding-left: 25px; }
+#book li { list-style-type: decimal; padding-bottom: 1em;}
+#book li span { font-weight: bold; }
+#book li span:after { content: "."; padding-right: 8px; }
+#book .gremlin-variants li { padding-bottom: 0em; }
+
+.social { border: 1px solid red; width: 950px; margin: auto; padding-top: 34px; }
+.social > div > div { padding-left: 35px; border: 1px solid green; width: 280px; overflow: hidden; }
 
 footer {width: 800px; text-align: center; margin: auto; }
 

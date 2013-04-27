@@ -13,6 +13,8 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+	<link rel="canonical" href="http://www.tinkerpopbook.com/" />
+
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -57,7 +59,7 @@
 	  </hgroup>
 	  <p class="soon">(In the Works, See Below)</p>
 	  <div class="hero"><img src="img/Tinkerpop-splash-large.png" width="700" /></div>
-	  <!-- div class="social">
+	  <!-- div class="social" align="center">
 	    <div class="row">
               <div class="span-one-third">
 		<div class="g-plusone"></div>
@@ -100,8 +102,11 @@
     </header>
 
     <div class="intro">
-      <p>The <a href="https://github.com/tinkerpop/">TinkerPop toolkit</a> is a sophisticated graph software stack that includes Gremlin, the graph traversal language, and Blueprints, 
-	which enables you to connect to any graph database that has a Blueprints adapter.</p>
+      <p>The <a href="https://github.com/tinkerpop/">TinkerPop toolkit</a> provides a solid 
+      foundation for building high-performance graph applications of any size, whether you are just 
+      modeling some data on your local laptop or you are building a massive application to handle 
+      trillion vertex graphs scaled across a cluster of computers.</p>
+
     </div>
 
 
@@ -115,9 +120,9 @@
 	    </div>
 	    <div class="description">
 	      <p>
-		Blueprints is a property graph model interface with provided implementations. 
-		Databases that implement the Blueprints interfaces automatically support 
-		Blueprints-enabled applications.
+		Blueprints is a property graph model and the foundation of the stack. It enables a 
+		database to hook into the entire toolkit by simply creating a set of classes that 
+		implement the Blueprints interface.
 	      </p>
             </div>
 	  </a>
@@ -196,13 +201,15 @@
 	    </div>
 	    <div class="descripton">
 	      <p>
-		Rexster is a multi-faceted graph server that exposes any Blueprints graph through 
-		several mechanisms with a general focus on REST.
+		Rexster is a high-performance graph-database server that allows you to access any Blueprints graph from any programming language through its binary protocol or its REST API.
 	      </p>
             </div>
 	  </a>
 	</div>
       </div>
+
+
+
 
   </section>
 
@@ -211,7 +218,10 @@
       <h2>NEWS</h2>
       <p class="subhead">What's happening now in TinkerPop land.</p>
     </header>
-    <div>
+    <div class="row clearfix" align="center">
+
+      <blockquote class="twitter-tweet"><p>Titan 0.3.0 Released: Geo, full-text, edge indexing. Stressed tested at 120 billion edges. <a href="http://t.co/XxfRm3nX4Y" title="http://thinkaurelius.com/news/">thinkaurelius.com/news/</a> <a href="https://twitter.com/search/%23graphdb">#graphdb</a> <a href="https://twitter.com/search/%23nosql">#nosql</a> <a href="https://twitter.com/search/%23bigdata">#bigdata</a></p>&mdash; aurelius (@aureliusgraphs) <a href="https://twitter.com/aureliusgraphs/status/317699047362277376">March 29, 2013</a></blockquote>
+      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
     </div>
     
@@ -224,24 +234,106 @@
   <section id="book">
     <header>
       <h2>BOOK</h2>
-    <p class="subhead">An introduction to graphs, Gremlin, and the world of TinkerPop. While it begins as an intro book, it ramps up fast. </p>
-
+    <p class="subhead">This book will teach you how to use graph technology to build powerful, data-driven applications.</p>
     </header>
 
       <div class="row">
         <div class="span-one-half">
-<p>In December 2011, Forrester predicted that "<a href="http://blogs.forrester.com/james_kobielus/11-12-19-the_year_ahead_in_big_data_big_cool_new_stuff_looms_large">graph databases would come into vogue</a>" in 2012, and they got it right. </p>
 
-<p>In 2012, graph-database technology took a giant leap forward when Titan burst onto the scene. Titan is a revolution in graph-database technology -- it’s a real-time, distributed, transactional graph database that’s open-source and can already scale beyond hundreds of billions of edges. For comparison, Twitter’s size in 2009 was only a few billion edges. (BTW we teach you how to build a Twitter clone using Titan as the final example in Part IV). </p>
+	  <h3>Overview</h3>
+
+	    <p>While this book is an introduction to graphs and the TinkerPop stack,
+	    it is not an introductory book. This book is for experienced developers, upper-level 
+	    computer science undergrads, or graduate students whom want to learn how to apply this 
+	    open-source graph technology.</p>
+
+	    <p>The book is divided into 8 parts:</p>
+
+	    <ol>
+	    <li><span>The Big Picture</span>
+	    Your journey begins with a big-picture overview of the graph database ecosystem, 
+	    fundamental concepts, and the TinkerPop stack.</li>
+	    
+	    <li><span>TinkerPop Stack in Depth</span>
+	    You learn about each component of the stack in depth.</li>
+
+	    <li><span>Working with Data</span>
+	    You learn how to load data, perform backups, and integrate 
+	    TinkerPop with external tools for graph processing and visualization.</li> 
+	    
+	    <li><span>Analyzing Graphs</span>
+	    Marko presents a new way of thinking about graph analysis.</li>
+	    
+	    <li><span>Advanced Topics</span>
+	    You learn about advanced topics like supernodes, creating DSLs, linked
+	    data, and the Semantic Web.</li> 
+	    
+	    <li><span>Example Applications</span>
+	    You are walked through seven complete examples, ranging from 
+	    building a social network and recommendation engine, to learning how to build and 
+	    analyze connections in a graph of campaign-finance and lobbyist data</li>
+	    
+	    <li><span>Case Studies</span> 
+	    You are presented with five case studies showing how organizations are using 
+	    TinkerPop graph technology in real-world projects.</li>
+	    
+	    <li><span>Problem Sets</span> 
+	    You are challenged to complete five problem sets. These 
+	    are not easy problem sets, and we do not provide solutions like we do for the example 
+	    applications. If you are able to meet this challenge, you will be at tinkerpopper 
+	    status.</li>
+
+	    </ol>
+
+
 
 	</div>
         <div class="span-one-half">
 
-<p>In the next few years, the dev world will experience an Hadoop-sized tidal wave of demand for graph database technology as word begins to spread. Experienced graph database developers are extremely hard to find, demand is rising, and it’s just get getting started. If you read and master this book, you will be able to ride that wave.</p>
 
 
-<p>Graphs provide an elegant way of storing relational data, and in this age of social graphs and Big Data, graph databases are becoming increasingly important. Graphs are fluid data structures that naturally adapt along with your data’s continually evolving network of complex relationships. With graph databases there are no tables or joins – everything is explicitly joined. </p>
+	  <h3>Databases</h3>
 	  
+	  <p>TinkerPop supports multiple graph databases, and each database excels in different areas so 
+	    we will discuss and compare the different database options and provide examples of working 
+	    with each, including:
+	    <a href="http://www.neo4j.org">Neo4j</a></li>,
+	    <a href="http://titan.thinkaurelius.com/">Titan</a>,
+	    <a href="http://www.orientdb.org/">OrientDB</a></li>,
+	    <a href="http://www.sparsity-technologies.com/dex.php">DEX</a>,
+	    <a href="https://github.com/tinkerpop/blueprints/wiki/TinkerGraph">TinkerGraph</a>, and more.</p>
+
+
+	  <h3>Programming Languages</h3>
+
+	  <p>We are writing the book to be language 
+	  agnostic. The TinkerPop stack is written in Java, but the Rexster server allows you to use <strong>any 
+	  programming language</strong> to connect to the stack.</p>
+
+	  <p>Example applications will be presented in Python because Python is concise and 
+	  the closest thing to executable pseudocode so most can often read it even if they are not 
+	  familiar with the language.</p> 
+
+	  <p>However, most of the code in the book will be presented in Gremlin-Groovy (the original Gremlin) --
+	  <strong>think of Gremlin as a domain-specific language like SQL</strong> you use in conjunction with your 
+	  primary programming language.</p>
+
+	  <p>The chapters on "Rexster Drivers &amp; Client Libraries" and "Gremlin Variants" will provide language-specific examples. 
+	  There are 7 Gremlin variants in various stages of development:</p>
+
+	  <ol class="gremlin-variants">
+	    <li><a href="https://github.com/tinkerpop/gremlin/wiki/Using-Gremlin-through-Java">Gremlin-Java</a> (base implementation)</li>
+	    <li><a href="https://github.com/tinkerpop/gremlin/wiki/Using-Gremlin-through-Groovy">Gremlin-Groovy</a> (original)</li>
+	    <li><a href="https://github.com/entrendipity/gremlin-js">Gremlin-JavaScript</a></li>
+	    <li><a href="https://github.com/zmaril/ogre">Gremlin-Clojure</a></li>
+	    <li><a href="https://github.com/mpollmeier/gremlin-scala">Gremlin-Scala</a></li>
+	    <li>Gremlin-Jython<sup>*</sup> (planned)</li> 
+	    <li>Gremlin-JRuby<sup>*</sup> (planned)</li>
+	  </ol>
+
+	  <p><sup>*</sup> If you are interested in helping develop Gremlin-Jython or Gremlin-JRuby (or any other implementation currently in development), 
+	  please post to the <a href="https://groups.google.com/forum/?fromgroups=#!forum/gremlin-users">Gremlin Users Group</a>.</p>
+
 
 	</div>
       </div>
@@ -308,27 +400,24 @@
       </div>
     </li>
     <li class="clearfix">
-      <div class="photo"><img src="img/marko.jpg" border="1"></div>
+      <div class="photo" ><img src="img/josh.jpg" /></div>
       <div class="bio">
-	<div><a href="http://markorodriguez.com/">Dr. Marko Rodriguez</a> has focused his academic and commercial career on graph theory, network science, and graph-system architecture and development. He is a TinkerPop co-founder and serves as the lead developer of the Gremlin graph traversal language. Marko received his Bachelors in Cognitive Science from UC San Diego, his Masters and Ph.D. in Computer Science from UC Santa Cruz and was a Director’s Fellow at the Center for Nonlinear Studies of the Los Alamos National Laboratory.</div>
+	<div><a href="http://fortytwo.net/">Joshua Shinavier</a> is a PhD candidate in RPI's Tetherless World Constellation, as well as a co-founder of TinkerPop, where he contributes tools which bridge the gap between graph databases and the Semantic Web.  His dissertation explores the possibilities of wearable computers, real-time computing, and Linked Data to give us new ways of interacting with each other and our physical environment. Joshua’s work has been featured in ReadWriteWeb and New Scientist.
+	</div> 
 	<!-- div class="social">
-	  <a href="https://twitter.com/twarko">
-	    <img src="img/twitter.png"></a>
-	  <a href="https://plus.google.com/114771576750200044131">
-	    <img src="img/google.png"></a>
-	  <a href="http://www.linkedin.com/in/markorodriguez">
-	    <img src="img/linkedin.png"></a>
-	  <a href="https://github.com/okram">
-	    <img src="img/github.png"></a>
+	  <a href="https://twitter.com/joshsh"><img src="img/twitter.png" /></a>
+	  <a href="https://plus.google.com/111013175394191406458"><img src="img/google.png" /></a>
+	  <a href="http://www.linkedin.com/in/joshuashinavier"><img src="img/linkedin.png" /></a>
+	  <a href="https://github.com/joshsh"><img src="img/github.png" /></a>
 	</div>
 	<div class="work">
-	  <a href="https://github.com/tinkerpop/gremlin/wiki">Gremlin</a>: 
-	  Graph traversal language.
+	  <a href="http://ripple.fortytwo.net/">Ripple</a>: Relational, stack-based data flow language for the Semantic Web.
 	</div>
 	<div class="work">
-	  <a href="http://channel9.msdn.com/Shows/Going+Deep/YOW-2012-Marko-Rodriguez-Graph-Systems-and-Databases">YOW! 2012 Interview:
-	  Graph Systems and Databases</a>. 
+	  <a href="http://www.slideshare.net/joshsh/realtime-semantic-web-with-twitter-annotations-4606369">2010 SemTech Presentation</a>: Real-Time Semantic Web with Twitter Annotations.
+
 	</div -->
+
       </div>
     </li>
     <li class="clearfix">
@@ -352,27 +441,32 @@
 	</div -->
       </div>
     </li>
+
     <li class="clearfix">
-      <div class="photo" ><img src="img/josh.jpg" /></div>
+      <div class="photo"><img src="img/marko.jpg" border="1"></div>
       <div class="bio">
-	<div><a href="http://fortytwo.net/">Joshua Shinavier</a> is a PhD candidate in RPI's Tetherless World Constellation, as well as a co-founder of TinkerPop, where he contributes tools which bridge the gap between graph databases and the Semantic Web.  His dissertation explores the possibilities of wearable computers, real-time computing, and Linked Data to give us new ways of interacting with each other and our physical environment. Joshua’s work has been featured in ReadWriteWeb and New Scientist.
-	</div> 
+	<div><a href="http://markorodriguez.com/">Dr. Marko Rodriguez</a> has focused his academic and commercial career on graph theory, network science, and graph-system architecture and development. He is a TinkerPop co-founder and serves as the lead developer of the Gremlin graph traversal language. Marko received his Bachelors in Cognitive Science from UC San Diego, his Masters and Ph.D. in Computer Science from UC Santa Cruz and was a Director’s Fellow at the Center for Nonlinear Studies of the Los Alamos National Laboratory.</div>
 	<!-- div class="social">
-	  <a href="https://twitter.com/joshsh"><img src="img/twitter.png" /></a>
-	  <a href="https://plus.google.com/111013175394191406458"><img src="img/google.png" /></a>
-	  <a href="http://www.linkedin.com/in/joshuashinavier"><img src="img/linkedin.png" /></a>
-	  <a href="https://github.com/joshsh"><img src="img/github.png" /></a>
+	  <a href="https://twitter.com/twarko">
+	    <img src="img/twitter.png"></a>
+	  <a href="https://plus.google.com/114771576750200044131">
+	    <img src="img/google.png"></a>
+	  <a href="http://www.linkedin.com/in/markorodriguez">
+	    <img src="img/linkedin.png"></a>
+	  <a href="https://github.com/okram">
+	    <img src="img/github.png"></a>
 	</div>
 	<div class="work">
-	  <a href="http://ripple.fortytwo.net/">Ripple</a>: Relational, stack-based data flow language for the Semantic Web.
+	  <a href="https://github.com/tinkerpop/gremlin/wiki">Gremlin</a>: 
+	  Graph traversal language.
 	</div>
 	<div class="work">
-	  <a href="http://www.slideshare.net/joshsh/realtime-semantic-web-with-twitter-annotations-4606369">2010 SemTech Presentation</a>: Real-Time Semantic Web with Twitter Annotations.
-
+	  <a href="http://channel9.msdn.com/Shows/Going+Deep/YOW-2012-Marko-Rodriguez-Graph-Systems-and-Databases">YOW! 2012 Interview:
+	  Graph Systems and Databases</a>. 
 	</div -->
-
       </div>
     </li>
+
     <li class="clearfix">
       <div class="photo" ><img src="img/ketrina.png" /></div>
       <div class="bio">
@@ -380,6 +474,7 @@
 	</div> 
       </div>
     </li>
+
 
     </ul>
 
