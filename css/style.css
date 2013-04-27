@@ -14,7 +14,7 @@ article, aside, details, fig caption, figure, footer, header, group, nav, sectio
 
 body { color: #333; 
        background-color: #FFF; 
-       font-family: 'ratio-n4', 'ratio', 'Helvetica Neue', Arial, sans-serif;
+       font-family: 'Helvetica Neue', Arial, sans-serif;
        font-size: 14px; 
        line-height: 26px;}
 h1,h2,h3,h4,h5,h6 { font-family: SpiegelCdOTBold; font-weight: normal; color: #000; }
@@ -35,7 +35,7 @@ a:hover, a:focus { color: #30707b; }
 #nav .page { width: 900px; margin: 0 auto; position: relative; border: 0px solid orange;}
 #nav .page:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; font-size: 0; }
 #nav .page li { float: left; }
-#nav .page li a { border-left: 1px dotted rgba(255, 255, 255, 0.3); display: block; line-height: 1; padding: 15px 0; color: #fff; font-size: 14.004px; font-family: 'ratio-n7','ratio','Helvetica Neue',Arial, sans-serif; font-weight: 700; font-style: normal; text-transform: uppercase; letter-spacing: .2em; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; text-align: center; width: 170px; }
+#nav .page li a { border-left: 1px dotted rgba(255, 255, 255, 0.3); display: block; line-height: 1; padding: 15px 0; color: #fff; font-size: 14.004px; font-family: 'Helvetica Neue',Arial, sans-serif; font-weight: 700; font-style: normal; text-transform: uppercase; letter-spacing: .2em; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; text-align: center; width: 170px; }
 #nav .page li a:active { background-color: #fff; color: #202020; }
 #nav .page li.on a, #nav .page li.transit a { color: #f16251; }
 #nav .page .nav-space-left, #nav .page .dbl-brdr, #nav .page .last { border-right: 1px dotted rgba(255, 255, 255, 0.3); }
@@ -110,7 +110,7 @@ hgroup { padding-top: 34px; }
 .home .content section#tinkerpop { margin-top: 0; }
 .content > section header { float: left; width: 474px; margin: 0; margin-left: 256px; margin-right: 256px; margin-bottom: 26px; border-top: 2px dotted #e3e5e4; border-bottom: 2px dotted #e3e5e4; text-align: center; padding: 1em 0;}
 .content > section header h2 { margin-bottom: 12px; }
-.subhead { display: block; color: #777; font-size: 21.96px; line-height: 31px; font-family: 'ratio-n5','ratio','Helvetica Neue',Arial, sans-serif; font-weight: 500; font-style: normal; margin: 0; }
+.subhead { display: block; color: #777; font-size: 21.96px; line-height: 31px; font-family: 'Helvetica Neue',Arial, sans-serif; font-weight: 500; font-style: normal; margin: 0; }
 .subhead a { text-decoration: underline; color: #777; }
 .subhead a:hover, .subhead a:focus { color: #30707b; }
 
