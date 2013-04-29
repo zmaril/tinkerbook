@@ -135,12 +135,12 @@ hgroup { padding-top: 34px; }
 #tinkerpop > div > div {border: 1px solid #FFF; padding: 10px; }
 #tinkerpop > div > div:hover { border: 1px solid #e3e5e4; background: #f9fafa; }
 
-#book p, ul, dl, ol { margin-bottom: 1em; }
+#book p, ul, dl, ol { margin-bottom: .5em; }
 #book ol { padding-left: 25px; }
-#book li { list-style-type: decimal; padding-bottom: 1em;}
+#book li { list-style-type: decimal; padding-bottom: .5em; }
 #book li span { font-weight: bold; }
 #book li span:after { content: "."; padding-right: 8px; }
-#book .gremlin-variants li { padding-bottom: 0em; }
+#book .gremlin-variants li { padding-bottom: 0em; line-height: 1.5em; }
 
 .social { border: 1px solid red; width: 950px; margin: auto; padding-top: 34px; }
 .social > div > div { padding-left: 35px; border: 1px solid green; width: 280px; overflow: hidden; }
