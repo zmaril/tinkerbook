@@ -1,365 +1,259 @@
-/*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
-
-body {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
-img {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-@font-face {
-    font-family: 'KarminaRegular';
-    src: url('fonts/karmina-regular-webfont.eot');
-    src: url('fonts/karmina-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/karmina-regular-webfont.woff') format('woff'),
-         url('fonts/karmina-regular-webfont.ttf') format('truetype'),
-         url('fonts/karmina-regular-webfont.svg#KarminaRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'KarminaBold';
-    src: url('fonts/karmina-bold-webfont.eot');
-    src: url('fonts/karmina-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/karmina-bold-webfont.woff') format('woff'),
-         url('fonts/karmina-bold-webfont.ttf') format('truetype'),
-         url('fonts/karmina-bold-webfont.svg#KarminaBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @font-face {
-    font-family: 'LucidaGrande';
-    src: url('fonts/lucida_grande-webfont.eot');
-    src: url('fonts/lucida_grande-webfont.eot?iefix') format('eot'),
-         url('fonts/lucida_grande-webfont.woff') format('woff'),
-         url('fonts/lucida_grande-webfont.ttf') format('truetype'),
-         url('fonts/lucida_grande-webfont.svg#webfontKf4nnxZc') format('svg');
+    font-family: 'SpiegelCdOTBold';
+    src: url('../fonts/spiegelcdot-bold-webfont.eot');
+    src: url('../fonts/spiegelcdot-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/spiegelcdot-bold-webfont.woff') format('woff'),
+    url('../fonts/spiegelcdot-bold-webfont.ttf') format('truetype'),
+    url('../fonts/spiegelcdot-bold-webfont.svg#spiegelcdotbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 
-#navbar { background-color: #000; border-bottom: 1px solid #E5E5E5; height: 72px; 
-  background-image: url(images/backgroundX.png);
-  background-repeat: repeat-x;
-  background-position: top;
-}
-#navbar-inner { width: 880px; margin: auto; }
 
-#navbar #main-nav { float: left; width: 222px; padding-right: 10px;  padding-top: 11px; display: inline; margin-left: 0px; border: 0px solid green; text-align: left; }
+h1, h2, h3 { line-height: 26px; }
 
-#navbar #main-nav #branding { border: 0px solid yellow; width: 200px;  font-size: 46px; font-family: KarminaRegular; margin-top: 0px; }
+h1,h2,h3,h4,h5,h6 { font-family: SpiegelCdOTBold; font-weight: normal; color: #000; }
+h3 { font-size: 19px; }
+h4 { font-size: 17px; }
 
-#navbar #main-nav #branding #logo {float: left; width: 44px; height: 40px; margin-top: 13px; border: 1px solid red; }
-#navbar #main-nav #branding #name { float: left; margin-left: 8px; margin-top: 32px; border: 1px solid green; }
+p, li { line-height: 1.5 em; }
 
-#navbar #menu { float: left; padding-left: 40px;  width: 590px; padding-top: 0px; margin-top: 20px; border: 0px solid red; font-size: 16px; text-align: left; height: 45px; }
-#navbar #menu .options { margin-left: 0px; } 
-#navbar #menu .options li { width: 100px; border: 0px solid green; list-style: none; display: inline; float: left; padding-top: 8px; padding-right: 21px; }
-#navbar #menu ul { margin: 0; } /* overrides YUI3 base */
+a { color: #16a5d9; 
+    text-decoration: none; 
+    -webkit-transition: all 0.25s linear; 
+    -moz-transition: all 0.25s linear; 
+    -o-transition: all 0.25s linear; 
+    transition: all 0.25s linear; 
+  }
 
-/* Colors */
-body { background-color: #FFFFFF; }
-.deemphasized { color: #777; }
-#navbar { color: #FFF; }
-#navbar a:link { color: #aaa; text-decoration: none; }
-#navbar a:visited { color: #aaa; text-decoration: none; }
-#navbarX a:visited { color: #6a7779; text-decoration: none; }
-#navbar a:hover { color: #c3d6db; text-decoration: none; }
-#navbar a:active { color: #FFF; text-decoration: none; }
+a:hover, a:focus { color: #30707b; }
 
-#branding a:link { color: #3b4448; }
-#branding a:visited { color: #3b4448; }
-#branding a:hover { color: #7d8e9d; }
-#branding a:hover span3 { color: #eee; }
-#branding a:active { color: #aaa; }
+h1.title { font-size: 89px; margin: 0px; line-height: 1em; }
+h2.tagline { font-size: 35px; color: #666; line-height: 1em;
+	     margin: 0px; padding-top: 25px; }
+p.soon { display: block;
+	 font-family: SpiegelCdOTBold; font-weight: normal;
+	 font-size: 28px; color: #888; line-height: 1em;
+         margin: 0px; padding-top: 45px;}
+div.hero { padding-top: 0px; }
+h1old { font-family: LucidaGrande; 
+        font-size: 42px; font-weight: normal; line-height: 1em; margin-bottom: 0px; }
+header { padding-top: 0px; padding-bottom: 34px; 
+	 background-color: #fff; text-align: center; }
+#front_logo { margin: auto; width: 422px; padding-bottom: 21px; }
 
-#navbar #main-nav #branding span { font-family: "KarminaBold"; }
+.lead { font-size: 16px; line-height: 26px; }
 
 
+/* Customize the navbar links to be fill the entire space of the .navbar */
+/* http://twitter.github.com/bootstrap/examples/justified-nav.html */
 
 
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
+.navbar .navbar-inner {
+    padding: 0 10px;
 }
 
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
+.navbar .nav {
     margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+    display: table;
+    width: 100%;
 }
 
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
+.navbar .nav li {
+    display: table-cell;
+    width: 1%;
+    float: none;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.navbar .nav li a {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border-left: 1px dotted rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-style: normal; 
+    text-transform: uppercase; 
+    letter-spacing: .2em; 
+    border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+}
+.navbar .nav li.last a  {
+    border-right: 1px dotted rgba(255, 255, 255, 0.3);
 }
 
-.clearfix:after {
-    clear: both;
+.navbar .nav li a:hover, .navbar .nav li a:focus { color: #f16251; }
+.navbar .nav li a:active { background-color: #fff; color: #202020; }
+.navbar .nav li.transit a { color: #f16251; }
+
+/* top right bottom left
+   top right/left bottom
+   top/bottom right/left
+   all
+*/
+
+.content { padding-top: 34px; }
+
+/* section headers */
+.content section { padding-top: 5em; 
+		   
+		   overflow: hidden; 
+		 }
+.content section header { max-width: 480px; 
+			  margin: auto; 
+			  text-align: center; 
+			  margin-bottom: 26px; 
+			  border-top: 2px dotted #e3e5e4; 
+			  border-bottom: 2px dotted #e3e5e4; 
+			  text-align: center; 
+			  padding: 1em 0; 
+			}
+.content section h2 { font-size: 50px; line-height: 50px; margin-top: 0; }
+.content section header h2 { margin-bottom: 6px; }
+.content section header h2 { margin-bottom: 12px; }
+.subhead { display: block; 
+	   color: #777; 
+	   font-size: 22px; 
+	   line-height: 31px; 
+	   font-weight: 500; 
+	   font-style: normal; 
+	   margin: 0; }
+.subhead a { text-decoration: underline; color: #777; }
+.subhead a:hover, .subhead a:focus { color: #30707b; }
+
+.clickbox {border: 1px solid #FFF; padding: 10px; }
+.clickbox:hover { border: 1px solid #e3e5e4; background: #f9fafa; }
+
+
+/****** Social **************/
+.social { padding-top: 34px; padding-bottom: 34px; }
+.social .middle { padding-left: 15px; }
+
+
+/****** TinkerPop **************/
+ 
+.content section#tinkerpop { margin-top: 0; }
+#tinkerpop h3 { margin-bottom: 11px; }
+#tinkerpop .icon { min-width: 106px; border: 0; padding: 0; height: 145px; }
+#tinkerpop .description {  min-width: 196px;}
+#tinkerpop .toolkit p { color: #333; margin-top: 0; line-height: 1.2em; } 
+#tinkerpop a:hover, 
+#tinkerpop a:focus { text-decoration: none; }
+#tinkerpop .row-fluid [class*="span"] { margin: 0; }
+
+/* http://stackoverflow.com/questions/1260122/expand-div-to-take-remaining-width */
+
+
+/****** News **************/
+#tweetList .item { min-height: 236px; }
+
+/****** Book **************/
+#book h3, #book li { line-height: 1.5em; }
+#bookX .row-fluid { padding-bottom: 21px; }
+#book h3, #book p { margin-top: 1em; }
+#book p, #book ol,  { margin-bottom: .5em; }
+#book li { list-style-type: decimal; padding-bottom: .5em; }
+#book li span { font-weight: bold; }
+#book li span:after { padding-right: 8px; }
+#book .gremlin-variants li { padding-bottom: 0em; }
+
+
+/****** Authors **************/
+#authors .row-fluid { margin-bottom: 10px; }
+#authors p { line-height: 1.5em; }
+#authors .photo img { width: 110px; border: 1px solid black; margin: 0; padding: 0; }
+
+
+/****** Resources **************/
+#resources li { line-height: 1.5em; }
+#resources ul { padding-left: 0; margin-left: 0; font-size: 14px; }
+#resources li { list-style-type: none; line-height: 1.2em; }
+ul.spaced li { padding-bottom: 11px; }
+
+ul.members-list li{display:block;border-bottom:1px solid #f1f1f1;width:inherit}
+ul.members-list{font-size:0;margin:5px 0; padding-left: 0;}
+ul.members-list li{display:inline-block;width:165px;position:relative;list-style-type:none;min-height:48px;margin:0;padding:10px 0 10px 58px;vertical-align:top}
+ul.members-list li h4{margin:-1px 0 0 0;font-size:16px;line-height:1.2}
+ul.members-list li h4 a{display:inline-block;text-overflow:ellipsis;overflow-x:hidden;width:100%}
+ul.members-list li h4 em{font-style:normal;font-weight:normal;color:#99a7af;display:block}
+ul.members-list li p{margin:-1px 0 0 0;font-size:11px;color:#bbb}
+ul.members-list .gravatar{float:left;margin-left:-58px;border-radius:3px}
+ul.members-list .placeholder .gravatar{opacity:0.5}
+ul.members-list .placeholder h4 a{color:#999}
+ul.members-list .minibutton{position:absolute;top:10px;right:0}
+ul.members-list p.details span.mini-icon{margin-left:15px;vertical-align:middle}
+ul.members-list p.details span.mini-icon:first-child{margin-left:0}
+
+
+/****** Footer **************/
+
+#copyright { color: #777; padding: 0px; }
+#copyright a { color: #777; text-decoration: none; }
+#copyright a:hover { color: #777; text-decoration: underline; }
+
+
+/****** Media Queries **************/
+
+
+@media (min-width: 1200px) {
+    #tinkerpop .row-fluid .span4 {
+	width: 33.2323232%;  /* 307  990 */
+	/* *width: 31.570740134569924%; */
+    }
+    .carousel-control {
+	top: 80px;
+	margin-top: 0px;
+    }
+
 }
 
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
+@media (max-width: 979px) {
 
-.clearfix {
-    *zoom: 1;
+  /* body padding-top is 60px to account for the fixed navbar */
+  body { padding-top: 60px; padding-bottom: 40px; }
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    position: fixed;
+  }
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
+@media (max-width: 480px) {
+    .navbar .nav li a { font-size: 11px; padding: 10px 2px 10px; }
+    .content { padding-top: 21px; }
+    h1.title { font-size: 50px; }
+    h2.tagline { font-size: 21px; padding-top: 18px; }
+    p.soon { font-size: 16px; padding-top: 21px; }
+    div.hero { padding-top: 18px; }
+    .content section { padding-top: 18px; }
+    .content section h2 { font-size: 34px; line-height: 34px; }
+    .subhead { font-size: 16px; line-height: 24px; }
+    .carousel { margin-bottom: 60px; }
+    .carousel-control {
+	top: auto;
+	margin-top: 0px;
     }
 }
+

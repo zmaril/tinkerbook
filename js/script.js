@@ -1,48 +1,148 @@
+
+//
+// HERO: Early Access Form
+//
+
+
 var emailRules = {"email": {required: true, email: true}};
 var emailMessages = {"email": "Please enter a valid email address"};
 
-function postContactToGoogle(){
+var highlight = function(element) {
+    $(element).closest('.control-group').removeClass('success').addClass('error');
+    $('#msgPlaceholder').removeClass('success').addClass('error');
+    
+}
+
+var valid = function(element) {
+    element
+        .text('OK')
+        .appendTo('#msgPlaceholder') 
+	.addClass('valid')
+	.closest('.control-group')
+	.removeClass('error')
+	.addClass('success');
+    
+}      
+
+var errorPlacement = function(error, element) {
+    $("#msgPlaceholder").html(message).addClass("text-error");
+
+}
+
+
+// https://gist.github.com/havvg/3226804
+
+var success = function(data, textStatus, jqXHR) {
+    // textStatus will always be parseError (ignore this, look at the status code)
+    $('#email').val("");
+    //$('#invite').hide();
+    $('#inviteSuccess').removeClass('hide').addClass('in');
+
+}
+
+var error = function(jqXHR, textStatus, errorThrown) {
+    $('#errorMsg').text(textStatus);
+    $('#inviteError')
+	.removeClass('hide')
+	.addClass('in');
+    //alert(textStatus + errorThrown);
+}
+
+var postContactToGoogle = function() {
     var email = $('#email').val();
+    //alert('hello');
     $.ajax({
         url: "https://spreadsheets.google.com/formResponse",
         data: {"entry.0.single" : email,
-               formkey: "dDhjREJ2enpYLTdydHg4bkV2MTBQOHc6MQ"},
+	       formkey: "dDhjREJ2enpYLTdydHg4bkV2MTBQOHc6MQ"},
         type: "POST",
         dataType: "xml",
         statusCode: {
-            0: function (){
-                $('#email').val("");
-		
-                alert('1111'); //Success message
-		
-            },
-            200: function (){
-		$('#email').val("");
-		   
-                alert('2222'); //Success Message
-		    
-            }
+	    0: success,
+	    200: success,
+	    400: error,
+	    401: error,
+	    403: error,
+	    404: error,
+	    405: error,
+	    409: error,
+	    411: error,
+	    412: error,
+	    416: error,
+	    500: error,
+	    501: error,
+	    503: error
         }
+	//success: success,
+	//error: error it returns html which generates a parseError so can't use error
     });
+    
 }
 
-$(document).ready(function(){
+var setupFormValidation = function() {
 
-    $("#invite").validate({
+
+    $("#formInvite").validate({
+	debug: false,
 	rules: emailRules,
 	messages: emailMessages,
-               
+        highlight: highlight,
+	success: valid,
+	errorLabelContainer: "#msgPlaceholder",
+	submitHandler: postContactToGoogle,
     });
 
-    $('#invite').submit(function(e){
-	e.preventDefault(); // prevents form submission
-	alert('hi');
-	postContactToGoogle();
+    // don't use data-dismiss="alert" else you won't get feedback if submitted twice
+    // https://github.com/twitter/bootstrap/issues/713
+    $('.alert .close').on('click',function(){
+    	$(this).parent().removeClass('in').addClass('hide');
+
     });
 
 
+    //validator.resetForm();
+
+}
 
 
+
+
+//
+// NEWS: Tweets
+//
+
+var tweetsUrl = "https://espeed.firebaseio.com/tinkerbook/cache/tweets"
+
+var appendTweet = function(html) {
+    $('#tweetList').append(
+	$('<div/>', { 'class': 'item', html: html })
+    );
+}
+
+var getTweets = function() {
+    
+    var tweetsRef = new Firebase(tweetsUrl);
+    tweetsRef.child('fav_tweets').on('value', function(data) {
+	var tweets = data.val();
+	//console.log(tweets);
+	tweets.map(appendTweet);
+	twttr.widgets.load();
+    });   
+}
+
+
+//
+// Main
+//
+
+
+$(document).ready(function(){
+    setupFormValidation();
+
+});
+
+$(window).load(function(){
+    getTweets();
 });
 
 
