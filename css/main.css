@@ -1,24 +1,7 @@
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @font-face {
     font-family: 'SpiegelCdOTBold';
@@ -30,8 +13,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
 
 h1, h2, h3 { line-height: 26px; }
 
@@ -108,12 +89,6 @@ header { padding-top: 0px; padding-bottom: 34px;
 .navbar .nav li a:hover, .navbar .nav li a:focus { color: #f16251; }
 .navbar .nav li a:active { background-color: #fff; color: #202020; }
 .navbar .nav li.transit a { color: #f16251; }
-
-/* top right bottom left
-   top right/left bottom
-   top/bottom right/left
-   all
-*/
 
 .content { padding-top: 34px; }
 

@@ -1,9 +1,6 @@
-
 //
-// HERO: Early Access Form
+// Early Access Form
 //
-
-
 var emailRules = {"email": {required: true, email: true}};
 var emailMessages = {"email": "Please enter a valid email address"};
 
@@ -29,9 +26,6 @@ var errorPlacement = function(error, element) {
 
 }
 
-
-// https://gist.github.com/havvg/3226804
-
 var success = function(data, textStatus, jqXHR) {
     // textStatus will always be parseError (ignore this, look at the status code)
     $('#email').val("");
@@ -45,12 +39,10 @@ var error = function(jqXHR, textStatus, errorThrown) {
     $('#inviteError')
 	.removeClass('hide')
 	.addClass('in');
-    //alert(textStatus + errorThrown);
 }
 
 var postContactToGoogle = function() {
     var email = $('#email').val();
-    //alert('hello');
     $.ajax({
         url: "https://spreadsheets.google.com/formResponse",
         data: {"entry.0.single" : email,
@@ -74,7 +66,7 @@ var postContactToGoogle = function() {
 	    503: error
         }
 	//success: success,
-	//error: error it returns html which generates a parseError so can't use error
+	//error: submit returns html which generates a parseError so must use statusCode
     });
     
 }
@@ -99,13 +91,7 @@ var setupFormValidation = function() {
 
     });
 
-
-    //validator.resetForm();
-
 }
-
-
-
 
 //
 // NEWS: Tweets
