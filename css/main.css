@@ -30,7 +30,7 @@ a { color: #16a5d9;
     transition: all 0.25s linear; 
   }
 
-a:hover, a:focus { color: #30707b; }
+a:hover, a:focus { color: #16a5d9; text-decoration: underline;  }
 
 h1.title { font-size: 89px; margin: 0px; line-height: 1em; }
 h2.tagline { font-size: 35px; color: #666; line-height: 1em;
@@ -47,6 +47,7 @@ header { padding-top: 0px; padding-bottom: 34px;
 #front_logo { margin: auto; width: 422px; padding-bottom: 21px; }
 
 .lead { font-size: 16px; line-height: 26px; }
+.lead a:hover, .lead a:focus { color: #16a5d9; text-decoration: underline;  }
 
 
 /* Customize the navbar links to be fill the entire space of the .navbar */
@@ -101,8 +102,8 @@ header { padding-top: 0px; padding-bottom: 34px;
 			  margin: auto; 
 			  text-align: center; 
 			  margin-bottom: 26px; 
-			  border-top: 2px dotted #e3e5e4; 
-			  border-bottom: 2px dotted #e3e5e4; 
+			  border-top: 2px dotted #d3d5d4; 
+			  border-bottom: 2px dotted #d3d5d4; 
 			  text-align: center; 
 			  padding: 1em 0; 
 			}
@@ -120,7 +121,9 @@ header { padding-top: 0px; padding-bottom: 34px;
 .subhead a:hover, .subhead a:focus { color: #30707b; }
 
 .clickbox {border: 1px solid #FFF; padding: 10px; }
-.clickbox:hover { border: 1px solid #e3e5e4; background: #f9fafa; }
+.clickbox:hover { border: 1px solid #DDD; background: #efefef; }
+.clickbox a:hover, 
+.clickbox a:focus { text-decoration: none; }
 
 
 /****** Social **************/
@@ -135,8 +138,6 @@ header { padding-top: 0px; padding-bottom: 34px;
 #tinkerpop .icon { min-width: 106px; border: 0; padding: 0; height: 145px; }
 #tinkerpop .description {  min-width: 196px;}
 #tinkerpop .toolkit p { color: #333; margin-top: 0; line-height: 1.2em; } 
-#tinkerpop a:hover, 
-#tinkerpop a:focus { text-decoration: none; }
 #tinkerpop .row-fluid [class*="span"] { margin: 0; }
 
 /* http://stackoverflow.com/questions/1260122/expand-div-to-take-remaining-width */
